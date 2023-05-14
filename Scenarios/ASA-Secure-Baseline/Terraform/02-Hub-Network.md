@@ -38,7 +38,7 @@ Deploy using Terraform Init, Plan and Apply
 
 
 
-terraform init -backend-config="resource_group_name=$TFSTATE_RG" -backend-config="storage_account_name=$STORAGEACCOUNTNAME" -backend-config="container_name=$CONTAINERNAME"
+terraform init -backend-config="resource_group_name=srramazuregithubproject" -backend-config="storage_account_name=srramazuregithubproject" -backend-config="container_name=terraform"
 ```
 
 ```bash

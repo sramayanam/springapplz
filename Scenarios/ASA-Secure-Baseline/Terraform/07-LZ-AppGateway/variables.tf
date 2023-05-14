@@ -339,26 +339,26 @@ variable "APPGW_Rg" {
 variable "backendPoolFQDN" {
     type        = string
     description = "FQDN of the backend URL of Azure Spring Cloud Application"
-    default     = "default-replace-me.private.azuremicroservices.io"
+    default     = "spring-srramsplza-dev-ao5s.private.azuremicroservices.io"
 }
 
 variable "https_password" {
     type        = string
     description = "Password of the PFX certificate file used by the Application Gateway listener"
     sensitive   = true
-    default = ""
+    default = "Lz8oq1dn"
 }
 
 variable "certfilename" {
     type        = string
     description = "filename of the PFX certificate file within this directory"
-    default = "" 
+    default = "appgwcert.pfx" 
 }
 
 variable "azure_app_gateway_zones" {
     type = set(string)
     description = "Deploy Azure App Gateway to these zones"
-    default = []
+    default = [1]
 }
 
 

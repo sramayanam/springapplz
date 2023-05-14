@@ -5,7 +5,7 @@ resource "azurerm_public_ip" "azure_appgw" {
     resource_group_name         = azurerm_resource_group.appgw_rg.name
     allocation_method           = "Static"
     sku                         = "Standard"
-
+    zones                       = [1]
     tags = var.tags 
 }
 
@@ -17,7 +17,7 @@ resource "azurerm_application_gateway" "azure_appgw" {
   sku {
     name     = "WAF_v2"
     tier     = "WAF_v2"
-    capacity = 2
+    capacity = 1
   }
   ssl_certificate {
     name     = "mySSLCert"

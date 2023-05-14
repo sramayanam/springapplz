@@ -25,7 +25,7 @@ provider "azurerm" {
 }
 
 locals {
-  vnet_spoke_name = "vnet-springlza-${data.azurerm_resource_group.spoke_rg.location}-SPOKE"
+  vnet_spoke_name = "vnet-srramsplza-${data.azurerm_resource_group.spoke_rg.location}-SPOKE"
 }
 
 data "azurerm_resource_group" "spoke_rg" {

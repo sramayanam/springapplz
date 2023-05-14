@@ -1,27 +1,27 @@
 variable "subscription_id" {
   type    = string
-  default = ""
+  default = "a5dc76bb-fb9c-460f-bc90-a9dd011b12ca"
 }
 variable "resource_group" {
   type    = string
-  default = "rg-springlza-SPOKE"
+  default = "rg-srramsplza-SPOKE"
 }
 variable "spring_cloud_service" {
   type = string
 }
 variable "spring_cloud_resource_group_name" {
   type    = string
-  default = "rg-springlza-APPS"
+  default = "rg-srramsplza-APPS"
 }
 
 variable "private_zones_resource_group_name" {
   type    = string
-  default = "rg-springlza-PRIVATEZONES"
+  default = "rg-srramsplza-PRIVATEZONES"
 }
 
 variable "key_vault_rg" {
   type    = string
-  default = "rg-springlza-SHARED"
+  default = "rg-srramsplza-SHARED"
 }
 variable "api_gateway" {
   type    = string

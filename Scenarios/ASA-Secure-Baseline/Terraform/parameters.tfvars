@@ -3,18 +3,18 @@
 ## Global
 ##################################################
 # The Region to deploy to
-    location              = "eastus"
+    location              = "eastus2"
 
 # This Prefix will be used on most deployed resources.  10 Characters max.
 # The environment will also be used as part of the name
-    name_prefix           = "springlza"
+    name_prefix           = "srramsplza"
     environment           = "dev"
 
 # Specify the Object ID for the "Azure Spring Apps Resource Provider" service principal in the customer's Azure AD Tenant
 # Use this command to obtain:
 #    az ad sp show --id e8de9221-a19c-4c81-b814-fd37c6caf9d2 --query id --output tsv
 
-    SRINGAPPS_SPN_OBJECT_ID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    SRINGAPPS_SPN_OBJECT_ID = "77e44c53-4911-427e-83c2-e2a52f569dee"
 
 # tags = { 
 #    project = "ASA-Accelerator"
@@ -27,9 +27,9 @@
 ##################################################
 
 # Deployment state storage information
-    state_sa_name  = "xxxx-enter-the-storage-account-name-xxxx"
-    state_sa_rg    = "xxxx-enter-the-resource-group-here-xxxx"
-    state_sa_container_name = "springappsterraform"
+    state_sa_name  = "srramazuregithubproject"
+    state_sa_rg    = "srramazuregithubproject"
+    state_sa_container_name = "terraform"
     
    
 ##################################################
