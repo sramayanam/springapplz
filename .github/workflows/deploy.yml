@@ -1,4 +1,4 @@
-name: Deploy to Azure Spring Apps using passwordless connections
+name: Deploy to Azure Spring Apps using passwordless connections.
 on: [push]
 permissions:
   id-token: write
